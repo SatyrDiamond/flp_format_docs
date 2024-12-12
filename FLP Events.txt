@@ -1,0 +1,416 @@
+=============================== Events ===============================
+
+NUM  | NAME                   | TYPE     |
+-----+------------------------+----------+
+  0  | Enabled                | Channel  | Channel Enabled
+  1  | NoteOn                 |          |
+  2  | Vol                    |          |
+  3  | Pan                    |          |
+  4  | MIDIChan               |          |
+  5  | MIDINote               |          |
+  6  | MIDIPatch              |          |
+  7  | MIDIBank               |          |
+  8  |                        |          |
+  9  | LoopActive             | Project  |
+ 10  | ShowInfo               | Project  |
+ 11  | Shuffle                | Project  |
+ 12  | MainVol                |          |
+ 13  | Stretch                |          |
+ 14  | Pitchable              |          |
+ 15  | Zipped                 |          |
+ 16  | Delay_Flags            |          |
+ 17  | Numerator              | Project  |
+ 18  | Denominator            | Project  |
+ 19  | UseLoopPoints          |          |
+ 20  | LoopType               | Channel  |
+ 21  | ChanType               | Channel  | Channel Type
+ 22  | MixSliceNum            | Channel  | FX Channel Number
+ 23  | PanVolumeTab           | Project  |
+ 24  | NStepsShown            |          |
+ 25  | SSLength               |          |
+ 26  | SSLoop                 |          |
+ 27  | FXProps                |          |
+ 28  | Registered             | Project  |
+ 29  | APDC                   |          |
+ 30  | TruncateClipNotes      | Project  |
+ 31  | EEAutoMode             |          |
+ 32  |                        |          |
+ 33  | TimeMarkerNumerator    | Arrangem | TimeMarker Numerator
+ 34  | TimeMarkerDenominator  | Arrangem | TimeMarker Denominator
+ 35  |                        |          |
+ 36  |                        |          |
+ 37  |                        |          |
+ 38  |                        |          |
+ 39  |                        |          |
+ 40  |                        |          |
+ 41  |                        |          |
+ 42  |                        |          |
+ 43  |                        |          |
+ 44  | Automatic_Crossfades   | Project  |
+ 45  |                        |          |
+ 46  |                        |          |
+ 47  |                        |          |
+ 48  |                        |          |
+ 49  |                        |          |
+ 50  |                        |          |
+ 51  |                        |          |
+ 52  |                        |          |
+ 53  |                        |          |
+ 54  |                        |          |
+ 55  |                        |          |
+ 56  |                        |          |
+ 57  |                        |          |
+ 58  |                        |          |
+ 59  |                        |          |
+ 60  |                        |          |
+ 61  |                        |          |
+ 62  |                        |          |
+ 63  |                        |          |
+ 64  | NewChan                | Channel  | Define Channel Number
+ 65  | NewPat                 | Pattern  | Define Pattern Number
+ 66  | Tempo                  | Project  |
+ 67  | CurrentPatNum          | Project  |
+ 68  | PatData                |          |
+ 69  | FX                     | Channel  |
+ 70  | Fade_Stereo            | Channel  |
+ 71  | CutOff                 | Channel  |
+ 72  | DotVol                 |          |
+ 73  | DotPan                 |          |
+ 74  | PreAmp                 | Channel  |
+ 75  | Decay                  | Channel  |
+ 76  | Attack                 | Channel  |
+ 77  | DotNote                |          |
+ 78  | DotPitch               |          |
+ 79  | DotMix                 |          |
+ 80  | MainPitch              | Project  |
+ 81  | RandChan               |          |
+ 82  | MixChan                |          |
+ 83  | Resonance              |          |
+ 84  | OldSongLoopPos         |          |
+ 85  | StDel                  | Channel  |
+ 86  | FX3                    | Channel  |
+ 87  | DotReso                |          |
+ 88  | DotCutOff              |          |
+ 89  | ShiftDelay             | Channel  |
+ 90  | LoopEndBar             |          |
+ 91  | Dot                    |          |
+ 92  | DotShift               |          |
+ 93  | TempoFine              |          |
+ 94  | LayerChan              | Channel  |
+ 95  | FXIcon                 | Mixer    | 
+ 96  |                        |          |
+ 97  |                        |          |
+ 98  | FXToSlotNum            | Mixer    | Add Plugin to FX Slot Number
+ 99  | NewArrangement         |          |
+100  | CurrentArrangementNum  | Arrangem | Arrangement Number
+101  |                        |          |
+102  |                        |          |
+103  |                        |          |
+104  |                        |          |
+105  |                        |          |
+106  |                        |          |
+107  |                        |          |
+108  |                        |          |
+109  |                        |          |
+110  |                        |          |
+111  |                        |          |
+112  |                        |          |
+113  |                        |          |
+114  |                        |          |
+115  |                        |          |
+116  |                        |          |
+117  |                        |          |
+118  |                        |          |
+119  |                        |          |
+120  |                        |          |
+121  |                        |          |
+122  |                        |          |
+123  |                        |          |
+124  |                        |          |
+125  |                        |          |
+126  |                        |          |
+127  |                        |          |
+128  | Color                  | Multi    | Channel/FXSlot Icon
+129  | PlayListItem           |          |
+130  | Echo                   |          |
+131  | FXSine                 |          |
+132  | CutCutBy               | Channel  |
+133  | WindowH                |          |
+134  |                        |          |
+135  | MiddleNote             | Channel  |
+136  | Reserved               |          |
+137  | MainResoCutOff         |          |
+138  | DelayReso              | Channel  |
+139  | Reverb                 | Channel  |
+140  | StretchTime            |          |
+141  | SSNote                 |          |
+142  | FineTune               |          |
+143  | SampleFlags            | Channel  |
+144  | LayerFlags             | Channel  |
+145  | ChanFilterNum          | Channel  |
+146  | CurrentFilterNum       |          |
+147  | FXOutChanNum           | Mixer    | Output Audio Device Num
+148  | NewTimeMarker          | Arrangem | TimeMarker
+149  | FXColor                | Mixer    | Color
+150  | PatColor               | Pattern  | Pattern Color
+151  | PatAutoMode            |          |
+152  | SongLoopPos            |          |
+153  | AUSmpRate              |          |
+154  | FXInChanNum            | Mixer    | Input Audio Device Num
+155  | PluginIcon             | Multi    | Channel/FXSlot Icon
+156  | FineTempo              | Project  |
+157  |                        |          |
+158  |                        |          |
+159  |                        |          |
+160  |                        |          |
+161  |                        |          |
+162  |                        |          |
+163  |                        |          |
+164  |                        |          |
+165  |                        |          |
+166  |                        |          |
+167  |                        |          |
+168  |                        |          |
+169  |                        |          |
+170  |                        |          |
+171  |                        |          |
+172  |                        |          |
+173  |                        |          |
+174  |                        |          |
+175  |                        |          |
+176  |                        |          |
+177  |                        |          |
+178  |                        |          |
+179  |                        |          |
+180  |                        |          |
+181  |                        |          |
+182  |                        |          |
+183  |                        |          |
+184  |                        |          |
+185  |                        |          |
+186  |                        |          |
+187  |                        |          |
+188  |                        |          |
+189  |                        |          |
+190  |                        |          |
+191  |                        |          |
+192  | ChanName               | Channel  | Channel Name
+193  | PatName                | Pattern  | Pattern Name
+194  | Title                  | Project  |
+195  | Comment                | Project  |
+196  | SampleFileName         | Channel  |
+197  | URL                    | Project  |
+198  | CommentRTF             | Project  |
+199  | Version                | Project  |
+200  | RegName                |          |
+201  | DefPluginName          | Plugin   | Plugin Name
+202  | ProjectDataPath        | Project  |
+203  | PluginName             | Multi    | Channel/FXSlot Visual Name
+204  | FXName                 | Mixer    | Name
+205  | TimeMarkerName         | Arrangem | TimeMarker Name
+206  | Genre                  | Project  |
+207  | Author                 | Project  |
+208  | MIDICtrls              |          |
+209  | Delay                  | Channel  | Channel Delay (see Channel Delay)
+210  | TS404Params            |          |
+211  | DelayLine              |          |
+212  | NewPlugin              | Plugin   | Plugin Create
+213  | PluginParams           | Plugin   | Plugin Param Data
+214  | Reserved2              |          |
+215  | ChanParams             | Channel  | Channel Params (see Channel Params)
+216  | CtrlRecChan            | Automate | Starting Param Values
+217  | PLSel                  |          |
+218  | Envelope               | Channel  | Channel Envelope/LFO (see Envelope/LFO)
+219  | BasicChanParams        | Channel  | Channel Basic Params (see Basic Params)
+220  | OldFilterParams        |          |
+221  | ChanPoly               | Channel  | Channel Poly (see Channel Poly)
+222  | NoteEvents             |          |
+223  | AutomationData         | Pattern  | Control Events
+224  | PatternNotes           | Pattern  | Notes Data
+225  | InitCtrlRecChan        | Automate | Starting FX Param Values
+226  | RemoteCtrl_MIDI        | Automate | Remote Control (from MIDI)
+227  | RemoteCtrl_Int         | Automate | Remote Control (from Controller)
+228  | Tracking               | Channel  | Channel Tracking (see Channel Tracking)
+229  | ChanOfsLevels          | Channel  |
+230  | RemoteCtrlFormula      |          |
+231  | ChanGroupName          | Project  |
+232  | RegBlackList           |          |
+233  | PlayListItems          | Arrangem | Playlist Items (see PlaylistItem)
+234  | ChanAC                 | Channel  | Automation Points
+235  | FXRouting              | Mixer    | Routing to FX Numbers
+236  | FXParams               | FXSlot   | Add FX Channel
+237  | ProjectTime            | Project  |
+238  | PLTrackInfo            | Arrangem | Track Info/Number (see Track)
+239  | PLTrackName            | Arrangem | Track Name
+240  |                        |          |
+241  | ArrangementName        | Arrangem | Arrangement Name
+242  |                        |          |
+243  |                        |          |
+244  |                        |          |
+245  |                        |          |
+246  |                        |          |
+247  |                        |          |
+248  |                        |          |
+249  |                        |          |
+250  |                        |          |
+251  |                        |          |
+252  |                        |          |
+253  |                        |          |
+254  |                        |          |
+
+=============================== Envelope/LFO ===============================
+
+int32  | Flags
+int32  | Envelope: Enabled
+int32  | Envelope: Predelay
+int32  | Envelope: Attack
+int32  | Envelope: Hold
+int32  | Envelope: Decay
+int32  | Envelope: Sustain
+int32  | Envelope: Release
+int32  | Envelope: Amount
+int32  | LFO: Predelay
+int32  | LFO: Attack
+int32  | LFO: Amount
+int32  | LFO: Speed
+int32  | LFO: Shape
+int32  | Envelope: Attack Tension
+int32  | Envelope: Decay Tension
+int32  | Envelope: Release Tension
+
+=============================== Channel Params ===============================
+
+int32  | ??unknown - usually: -1
+int32  | ??unknown - usually: 0
+int8   | ??unknown Flag
+int8   | Remove DC
+int8   | Delay Flags
+int8   | Main Pitch
+int32  | ??unknown - usually: -1
+int32  | ??unknown - usually: 60
+float  | DrumSynth Tone
+float  | DrumSynth Over
+float  | DrumSynth Noise
+float  | DrumSynth Band
+float  | DrumSynth Time
+uint32 | Arp Direction
+uint32 | Arp Range
+uint32 | Arp Chord
+uint32 | Arp Time
+uint32 | Arp Gate
+int8   | Arp Slide
+1byte  | ??unknown - usually hex: 00
+int8   | Time Full Porta
+int8   | Add to Key
+int16  | Time Gate
+2byte  | ??unknown - usually hex: 0000
+uint32 | Keyrange Min
+uint32 | Keyrange Max
+4byte  | ??unknown - usually hex: 00000000
+int8   | Normalize
+int8   | Reverse Polarity
+1byte  | ??unknown - usually hex: 00
+int8   | Declick Mode
+uint32 | Crossfade
+uint32 | Trim
+uint32 | Arp Repeat
+uint32 | Stretching Time
+int32  | Stretching Pitch
+int32  | Stretching Multiplier
+int32  | Stretching Mode
+uint32 | Midi Chan Thru
+int32  | ??unknown - usually: -2
+int32  | ??unknown - usually: -1
+int32  | ??unknown - usually: 0
+double | Start
+double | Length
+double | Start Offset
+4byte  | ??unknown - usually hex: ffffffff
+4byte  | ??unknown - usually hex: 00010000
+double | Stretching Formant
+
+=============================== Channel Poly ===============================
+
+int32  | Max
+int32  | Slide
+int8   | Flags
+
+=============================== Basic Params ===============================
+
+int32  | Pan
+int32  | Volume
+int32  | Pitch
+int32  | Mod X
+int32  | Mod Y
+int32  | Mod Type
+
+=============================== Channel Tracking ===============================
+
+int32  | Mid
+int32  | Pan
+int32  | Mod X
+int32  | Mod Y
+
+=============================== Channel Delay ===============================
+
+int32  | Feedback
+int32  | Pan
+int32  | Pitch
+int32  | Echoes
+int32  | Time
+
+=============================== Track ===============================
+
+int32  | ID
+int32  | Color
+int32  | Icon
+int8   | Enabled
+float  | Height
+int8   | Locked To Content
+int32  | Motion
+int32  | Press
+int32  | Trigger Sync
+int32  | Queued
+int32  | Tolerant
+int32  | Position Sync
+int8   | Grouped
+int8   | Locked
+????   | ??unknown - usually hex: 000000000000000000FFFFFFFFFFFFFFFF0100000000
+
+=============================== PlaylistItem ===============================
+
+int32  | Pos
+int16  | Pattern Base
+int16  | Item Index
+int32  | Length
+int32  | Track Index
+int16  | ??unknown
+int16  | flags
+int32  | ??unknown
+
+if Notes or Automation:
+	int32  | Start Offset
+	int32  | End Offset
+
+if Audio:
+	float  | Start Offset
+	float  | End Offset
+
+=============================== Notes ===============================
+
+int32  | Pos
+int16  | Flags
+int16  | Channel Num
+int32  | Dur
+int16  | Key
+int16  | Group
+int8   | Fine Pitch
+int8   | ??unknown
+int8   | Release
+int8   | MIDI Channel
+int8   | Pan
+int8   | Velocity
+int8   | Mod X
+int8   | Mod Y
+
+
